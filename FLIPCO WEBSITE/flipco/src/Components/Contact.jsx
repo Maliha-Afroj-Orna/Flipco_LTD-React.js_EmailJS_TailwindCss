@@ -1,4 +1,5 @@
-import React, { useState } from 'react'
+import React, { useState } from 'react';
+import emailjs from "emailjs-com";
 
 export default function Contact() {
 
@@ -27,15 +28,37 @@ export default function Contact() {
     const handleSubmit = (e) => {
         e.preventDefault();
         const validationErrors = validate();
-        if(Object.keys(validationErrors).length > 0) {
+        if (Object.keys(validationErrors).length > 0) {
             setErrors(validationErrors);
         } else {
             setErrors({});
-            console.log("Form Data Submitted: ", formData);
-            alert("Form submitted successfully!");
-            setFormData({name: "", business: "", email: "", message: ""});
+
+            emailjs
+            .send(
+                "service_f2nu2n8",    
+                "template_4j0jh8r",   
+                {
+                from_name: formData.name,
+                business_name: formData.business,
+                from_email: formData.email,
+                message: formData.message,
+                },
+                "c90O_c1B-nOnalGek"     
+            )
+            .then(
+                (response) => {
+                console.log("SUCCESS!", response.status, response.text);
+                alert("✅ Message sent successfully!");
+                setFormData({ name: "", business: "", email: "", message: "" });
+                },
+                (err) => {
+                console.log("FAILED...", err);
+                alert("❌ Failed to send message. Try again later.");
+                }
+            );
         }
-    };
+        };
+
 
     const handleChange = (e) => {
         setFormData({...formData, [e.target.name]: e.target.value});

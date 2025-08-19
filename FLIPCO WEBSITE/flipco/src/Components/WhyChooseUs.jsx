@@ -6,25 +6,25 @@ export default function WhyChooseUs() {
   {
     id: 1, 
     title: 'Cost Efficient', 
-    desc: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatibus quia, nulla! Maiores et perferendis eaque, exercitationem praesentium nihil.',
+    desc: 'Flipco LTD maintains cost efficiency by optimizing resources, reducing waste, and streamlining operations, ensuring maximum value with minimal expenses.',
     img: <img src='/images/dollar.png' alt='Cost Efficient' />
   },
   {
     id: 2, 
     title: 'Reliable Sourcing', 
-    desc: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatibus quia, nulla! Maiores et perferendis eaque, exercitationem praesentium nihil.',
+    desc: 'Flipco LTD ensures reliable sourcing by partnering with trusted suppliers, maintaining consistent quality, and delivering products on time, every time.',
     img: <img src='/images/like.png' alt='Reliable Sourcing' />
   },
   {
     id: 3, 
     title: 'Diverse Brands', 
-    desc: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatibus quia, nulla! Maiores et perferendis eaque, exercitationem praesentium nihil.',
+    desc: 'Flipco LTD offers a diverse range of brands, catering to varied customer needs and preferences while maintaining consistent quality.',
     img: <img src='/images/brand.png' alt='Diverse Brands' />
   },
   {
     id: 4, 
     title: 'Tailored Support', 
-    desc: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatibus quia, nulla! Maiores et perferendis eaque, exercitationem praesentium nihil.',
+    desc: 'Flipco LTD provides tailored support by understanding each client’s unique needs, offering personalized solutions, and ensuring exceptional service at every step.',
     img: <img src='/images/support.png' alt='Tailored Support' />
   },
 

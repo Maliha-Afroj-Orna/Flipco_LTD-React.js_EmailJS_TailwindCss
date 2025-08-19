@@ -5,7 +5,7 @@ export default function Header() {
     <header className='sticky top-0 z-50 bg-white border border-b border-gray-300'>
         <div className='flex justify-between items-center'>
             <div className='ml-12'>
-                <img className='w-35 h-20' src="/images/logo.jpg" alt="Flipco Logo" />
+                <a href="#home"><img className='w-35 h-20' src="/images/logo.jpg" alt="Flipco Logo" /></a>
             </div>
 
             <nav className='mr-12'>

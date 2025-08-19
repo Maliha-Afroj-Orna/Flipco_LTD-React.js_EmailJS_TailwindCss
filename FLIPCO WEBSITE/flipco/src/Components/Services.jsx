@@ -10,25 +10,25 @@ const services = [
   {
     id: 1, 
     title: 'Product Sourcing', 
-    desc: 'Access to a wide range of products from trusted brands',
+    desc: 'Access a wide range of trusted, high-demand products across personal care, beauty, healthcare, and household categories.',
     img: <img src='/images/product.png' alt='Cost Efficient' />
   },
   {
     id: 2, 
     title: 'Bulk Purchasing Support', 
-    desc: 'Helping independents get competitive prices',
+    desc: 'Benefit from competitive pricing through our bulk buying strategies, giving independents the same advantage as larger chains.',
     img: <img src='/images/purchase.png' alt='Reliable Sourcing' />
   },
   {
     id: 3, 
     title: 'Logistics & Delivery', 
-    desc: 'Reliable and timely product delivery',
+    desc: 'Count on us for reliable and timely delivery, ensuring your shelves are always stocked.',
     img: <img src='/images/delivery.png' alt='Diverse Brands' />
   },
   {
     id: 4, 
     title: 'Tailored Solutions', 
-    desc: 'Custom orders based on retailer needs',
+    desc: 'Every retailer is unique; we offer flexible sourcing options and custom orders to match your business needs.',
     img: <img src='/images/solution.png' alt='Tailored Support' />
   },
 
@@ -66,7 +66,7 @@ const services = [
 
         <div className='ml-20 pb-8'>
           <div className='flex justify-center items-center px-8 mb-2'>
-              <p className='text-base text-gray-800 text-center max-w-5xl'>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Sapiente nemo similique, harum in corporis quis ea, distinctio dolores tempore maxime illum ipsa, tenetur a voluptas velit deserunt nam modi iste.</p>
+              <p className='text-base text-gray-800 text-center max-w-5xl'>At FLIPCO LTD, we provide end-to-end sourcing and supply solutions designed to empower independent retailers. Our services are built around reliability, cost efficiency, and flexibility.</p>
           </div>
 
         <Slider {...settings}>

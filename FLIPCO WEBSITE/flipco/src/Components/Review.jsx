@@ -9,20 +9,29 @@ export default function Review() {
 const review = [
   {
     id: 1, 
-    name: 'Nancy', 
-    review: 'Lorem ipsum dolor, sit amet consectetur adipisicing elit. Architecto suscipit, repudiandae commodi magnam cum eligendi maxime, dolorem voluptates praesentium minima tempora cumque at quibusdam, eaque deserunt obcaecati assumenda! Distinctio, debitis.',
-    img: <img src='/images/product.png' alt='Nancy' />
+    name: 'Maria', 
+    subname: '- Grocery & Household Retailer, Wolverhampton.',
+    review: '“Great service and great team! FLIPCO has helped us grow our business with trusted products that our customers love.”',
   },
   {
     id: 2, 
-    name: 'Nancy', 
-    review: 'Lorem ipsum dolor, sit amet consectetur adipisicing elit. Architecto suscipit, repudiandae commodi magnam cum eligendi maxime, dolorem voluptates praesentium minima tempora cumque at quibusdam, eaque deserunt obcaecati assumenda! Distinctio, debitis.',
+    name: 'Amir', 
+    subname: '- Independent Convenience Store Owner, Birmingham.',
+    review: '“FLIPCO LTD has been a game-changer for our store. Their competitive prices and reliable deliveries help us keep our shelves full and our margins healthy.”',
     img: <img src='/images/product.png' alt='Nancy' />
   },
   {
     id: 3, 
-    name: 'Nancy', 
-    review: 'Lorem ipsum dolor, sit amet consectetur adipisicing elit. Architecto suscipit, repudiandae commodi magnam cum eligendi maxime, dolorem voluptates praesentium minima tempora cumque at quibusdam, eaque deserunt obcaecati assumenda! Distinctio, debitis.',
+    name: 'Sophie', 
+    subname: '- Pharmacy Retailer, Coventry.',
+    review: '“We used to struggle competing with larger chains, but thanks to FLIPCO’s bulk purchasing support, we now offer the same brands at better prices.”',
+    img: <img src='/images/product.png' alt='Nancy' />
+  },
+  {
+    id: 4, 
+    name: 'James', 
+    subname: '- Local Health & Beauty Shop, Birmingham.',
+    review: '“The tailored sourcing service is fantastic. FLIPCO always finds exactly what we need, and the delivery is always on time.”',
     img: <img src='/images/product.png' alt='Nancy' />
   },
   
@@ -61,15 +70,15 @@ const review = [
 
         <div className='ml-20 pb-8'>
           <div className='flex justify-center items-center px-8 mb-2'>
-              <p className='text-base text-gray-800 text-center max-w-5xl'>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Sapiente nemo similique, harum in corporis quis ea, distinctio dolores tempore maxime illum ipsa, tenetur a voluptas velit deserunt nam modi iste.</p>
+              <p className='text-base text-gray-800 text-center max-w-5xl'>Independent retailers trust FLIPCO LTD to deliver value, quality, and reliability. See how we’ve helped businesses grow and stay competitive.</p>
           </div>
 
         <div className='flex flex-row justify-between items-center flex-1 w-full'>
             <div className='flex-1 min-w-0 ml-40'>
             <Slider {...settings}>
-                {review.map(({ id, name, review, img }) => (
+                {review.map(({ id, name, review, subname }) => (
                 <div key={id} className='px-2'>
-                    <ReviewCard name={name} review={review} img={img} />
+                    <ReviewCard name={name} review={review} subname={subname} />
                 </div>
                 ))}
             </Slider>

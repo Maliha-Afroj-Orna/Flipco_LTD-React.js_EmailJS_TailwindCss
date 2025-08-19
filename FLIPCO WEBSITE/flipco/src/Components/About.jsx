@@ -12,10 +12,7 @@ export default function About() {
             <div className='ml-10 mr-20 mt-4 mb-10'>
                 <h1 className='text-2xl font-bold'>Who Are We?</h1>
                 <p className='text-base mt-4 text-gray-800'>
-                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nesciunt 
-                    dolores corrupti dolor, quasi sunt veniam cumque assumenda animi 
-                    atque consequatur est optio fugit eius voluptates nulla 
-                    laboriosam temporibus, odit quidem.
+                    At FLIPCO LTD, we help independent retailers access big-brand products at competitive prices. Through trusted sourcing, bulk buying, and reliable delivery, we make it easier for small businesses to compete and grow.
                 </p>
                 <h1 className='text-2xl font-bold mt-8'>Our Mission</h1>
                 <h3 className='text-base text-gray-800 mt-5'>To level the playing field for independent retailers by providing competitive pricing, quality products, and exceptional service</h3>
