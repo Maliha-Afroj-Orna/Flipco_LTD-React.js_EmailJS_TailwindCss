@@ -23,7 +23,7 @@ export default function Header() {
     transition-all duration-300 ease-in-out`}>
           <div className='flex items-center justify-between px-4 md:px-12 py-2'>
               <div>
-                  <a href="#home"><img className='w-28 h-12 md:w-36 md:h-20 object-contain' src="/images/logo.jpg" alt="Flipco Logo" /></a>
+                  <a href="#home"><img className='w-28 h-12 md:w-36 md:h-20 object-contain' src="/images/logo.png" alt="Flipco Logo" /></a>
               </div>
 
               <nav className="hidden md:block">

@@ -14,7 +14,7 @@ export default function Footer() {
       <div className="flex flex-col md:flex-row flex-wrap justify-between pt-12 pb-8 px-4 md:px-20 bg-[#3A4D64] text-white">
         
         <div className="w-full sm:w-1/2 md:w-1/4 flex flex-col items-center text-white mb-6">
-          <img className="w-36 h-20 mb-4 object-contain" src="/images/logo.jpg" alt="Footer Logo" />
+          <img className="w-36 h-20 mb-4 object-contain" src="/images/footer_logo.png" alt="Footer Logo" />
           <p className="text-gray-200 text-base">
             FLIPCO LTD specializes in sourcing and supplying quality products to independent retailers, helping them compete with larger chains.
           </p>
