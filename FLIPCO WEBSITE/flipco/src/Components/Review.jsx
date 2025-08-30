@@ -49,16 +49,7 @@ const review = [
     autoplaySpeed: 4000, 
     pauseOnHover: false,
     arrows: false, 
-    responsive: [
-      {
-        breakpoint: 1024,
-        settings: { slidesToShow: 2 }
-      },
-      {
-        breakpoint: 640,
-        settings: { slidesToShow: 1 }
-      }
-    ]
+    centerMode: false,
   };
 
   return (
@@ -68,37 +59,37 @@ const review = [
             Customer Review
         </h1>
 
-        <div className='ml-20 pb-8'>
-          <div className='flex justify-center items-center px-8 mb-2'>
-              <p className='text-base text-gray-800 text-center max-w-5xl'>Independent retailers trust FLIPCO LTD to deliver value, quality, and reliability. See how we’ve helped businesses grow and stay competitive.</p>
-          </div>
+      <div className='pb-8'>
+        <div className='flex justify-center items-center px-8 mb-2'>
+          <p className='text-base text-gray-800 text-center max-w-5xl mb-8'>Independent retailers trust FLIPCO LTD to deliver value, quality, and reliability. See how we’ve helped businesses grow and stay competitive.</p>
+        </div>
 
-        <div className='flex flex-row justify-between items-center flex-1 w-full'>
-            <div className='flex-1 min-w-0 ml-40'>
-            <Slider {...settings}>
-                {review.map(({ id, name, review, subname }) => (
-                <div key={id} className='px-2'>
-                    <ReviewCard name={name} review={review} subname={subname} />
-                </div>
-                ))}
-            </Slider>
+        <div className='flex flex-row justify-center items-center gap-x-8 w-full mb-4'>
+            <div className='flex-1 min-w-0 w-full lg:mr-2 lg:ml-70'>
+              <Slider {...settings}>
+                  {review.map(({ id, name, review, subname }) => (
+                  <div key={id} className='w-full sm:w-1/2 md:w-1/2 lg:w-1/4 px-2'>
+                      <ReviewCard name={name} review={review} subname={subname} />
+                  </div>
+                  ))}
+              </Slider>
             </div>
 
-            <div className="flex-shrink-0 relative flex items-center justify-center mr-70">
+            <div className="hidden sm:flex flex-shrink-0 relative items-center justify-center mt-10 lg:ml-2 lg:mr-70 lg:mt-8">
     
-    <div className="absolute w-120 h-120 bg-teal-400 [clip-path:circle(70%_at_90%_50%)]"></div>
+                <div className="absolute w-120 h-120 bg-teal-400 [clip-path:circle(70%_at_90%_50%)]"></div>
 
-    
-    <img
-      className="relative w-100 h-100 object-cover rounded-full shadow-lg"
-      src="/images/about.jpg"
-      alt="Review"
-    />
-    </div>
+        
+              <img
+                className="relative w-100 h-100 object-cover rounded-full shadow-lg"
+                src="/images/about.jpg"
+                alt="Review"
+              />
+            </div>
         </div>
 
       </div>
-      </div>
+    </div>
     </>
   )
 }

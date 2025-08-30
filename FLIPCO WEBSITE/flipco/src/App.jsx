@@ -16,8 +16,6 @@ function App() {
 
   return (
     <>
-      <Hero />
-      <Header />
       <Home />
       <WhyChooseUs />
       <About />

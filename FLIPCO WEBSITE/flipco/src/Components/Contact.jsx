@@ -35,15 +35,15 @@ export default function Contact() {
 
             emailjs
             .send(
-                "service_f2nu2n8",    
-                "template_4j0jh8r",   
+                "service_8wxf3ky",    
+                "template_tzz1ert",   
                 {
                 from_name: formData.name,
                 business_name: formData.business,
                 from_email: formData.email,
                 message: formData.message,
                 },
-                "c90O_c1B-nOnalGek"     
+                "5-5FCMrMsW9bDFRm4"     
             )
             .then(
                 (response) => {
@@ -66,13 +66,13 @@ export default function Contact() {
 
   return (
     <>
-        <div id='contact' className='py-10 px-10'>
+        <div id='contact' className='py-10 px-4 sm:px-6 md:px-10 lg:px-20 mb-4'>
         <h1 id='services' className='flex justify-center items-center font-bold mt-4 mb-8 px-10 text-3xl'>
             Contact Us
         </h1>
 
         <form onSubmit={handleSubmit}
-              className="max-w-lg mx-auto p-6 bg-white rounded shadow-md border border-gray-300 space-y-4 mb-8"
+              className="w-full max-w-lg mx-auto p-6 sm:p-8 bg-white rounded shadow-md border border-gray-300 space-y-4"
         >
             <div>
                 <label className="font-bold block text-sm text-gray-700">Name: </label>
@@ -81,7 +81,7 @@ export default function Contact() {
                     name="name"
                     value={formData.name}
                     onChange={handleChange}
-                    className="mt-1 block w-full rounded border-gray-300 shadow-sm focus:border-indigo-500 focus:ring focus:ring-indigo-200 focus:ring-opacity-50 p-2"
+                    className="mt-1 block w-full rounded border-gray-300 shadow-sm focus:border-indigo-500 focus:ring focus:ring-indigo-200 focus:ring-opacity-50 p-2 sm:p-3 text-sm sm:text-base"
                 />
                 {errors.name && <p className="text-red-500 text-sm">{errors.name}</p>}
             </div>
@@ -125,7 +125,7 @@ export default function Contact() {
 
         <div>
             <button type='submit'
-                    className="font-bold w-full bg-[#3a4d64] text-white py-2 px-4 rounded hover:bg-[#9DDCD1] hover:text-black hover:cursor-pointer transition"
+                    className="w-full font-bold bg-[#3a4d64] text-white py-2 sm:py-3 px-4 rounded hover:bg-[#9DDCD1] hover:text-black transition"
             >
                     Submit
             </button>

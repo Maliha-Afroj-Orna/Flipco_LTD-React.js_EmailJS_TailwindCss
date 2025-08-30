@@ -1,22 +1,21 @@
 import React from 'react'
 
-export default function Services({title, desc, img}) {
+export default function ServicesCard({ title, desc, img }) {
   return (
-    <> 
-    <div className='ml-4 mr-4 my-20 w-96 h-80 rounded overflow-hidden shadow-lg border border-gray-300 transition-transform duration-300 hover:shadow-2xl hover:-translate-y-4 hover:bg-[#00D5BE] hover:cursor-pointer'>
-        <div className="px-2 py-8 rounded text-black">
-            <div className="mt-2 w-20 h-20 mx-auto">
-                {img}
-            </div>
-
-            <div className="px-6 py-4 text-center">
-                <div className="font-bold text-xl mb-2">{title}</div>
-                <p className="text-gray-800 text-base">
-                {desc}
-                </p>
-            </div>
+    <div className='m-2 w-full max-w-xs sm:max-w-sm lg:max-w-md h-80 rounded overflow-hidden shadow-lg border border-gray-300 transition-transform duration-300 hover:shadow-2xl hover:-translate-y-2 hover:bg-[#00D5BE] cursor-pointer'>
+      
+      <div className='flex flex-col h-full items-center justify-center px-4 py-6 text-black'>
+      
+        <div className='w-16 h-16 sm:w-20 sm:h-20 mb-4'>
+          {img}
         </div>
+
+        <div className='flex-1 flex flex-col text-center px-2'>
+          <h3 className='font-bold text-lg sm:text-xl mb-8'>{title}</h3>
+          <p className='text-gray-800 text-sm sm:text-base'>{desc}</p>
+        </div>
+
+      </div>
     </div>
-    </>
   )
 }
